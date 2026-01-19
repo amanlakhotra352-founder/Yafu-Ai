@@ -13,7 +13,7 @@ const Booking: React.FC = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/hello@yafuai.online', {
+      const response = await fetch('https://formspree.io/f/amanlakhotra@yafuai.online', {
         method: 'POST',
         body: formData,
         headers: {
@@ -83,7 +83,7 @@ const Booking: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-white">Message Received!</h3>
                   <p className="text-gray-400">
-                    We'll get back to you at <strong>hello@yafuai.online</strong> shortly. 
+                    We'll get back to you at <strong>amanlakhotra@yafuai.online</strong> shortly. 
                     <br />Please check your inbox.
                   </p>
                 </div>
@@ -138,7 +138,7 @@ const Booking: React.FC = () => {
                     )}
                   </button>
                   {status === 'error' && (
-                    <p className="text-red-400 text-sm text-center animate-pulse">Something went wrong. Please try emailing hello@yafuai.online directly.</p>
+                    <p className="text-red-400 text-sm text-center animate-pulse">Something went wrong. Please try emailing amanlakhotra@yafuai.online directly.</p>
                   )}
                 </form>
               )}
