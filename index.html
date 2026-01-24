@@ -34,39 +34,45 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23a855f7'/><stop offset='100%' style='stop-color:%23ec4899'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><text x='50%' y='50%' dy='.35em' fill='white' font-family='sans-serif' font-weight='800' font-size='50' text-anchor='middle'>Y</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23FF7444'/><stop offset='100%' style='stop-color:%23B7BDF7'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><text x='50%' y='50%' dy='.35em' fill='white' font-family='sans-serif' font-weight='800' font-size='50' text-anchor='middle'>Y</text></svg>">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Vanta.js Background Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+
     <style>
       :root {
         scroll-behavior: smooth;
       }
       body {
         font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #030712;
-        color: #f3f4f6;
+        background-color: #FFF8DE;
+        color: #576A8F;
         margin: 0;
         overflow-x: hidden;
       }
       .glass-card {
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(87, 106, 143, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
       }
       .text-gradient {
-        background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+        background: linear-gradient(135deg, #576A8F 0%, #FF7444 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
       .btn-gradient {
-        background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+        background: linear-gradient(135deg, #FF7444 0%, #576A8F 100%);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        color: #FFF8DE;
       }
       .btn-gradient:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px -5px rgba(219, 39, 119, 0.4);
+        box-shadow: 0 10px 25px -5px rgba(255, 116, 68, 0.3);
       }
       .animate-float {
         animation: float 6s ease-in-out infinite;
@@ -77,9 +83,9 @@
       }
       .mesh-bg {
         background-image: 
-          radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.12) 0, transparent 50%),
-          radial-gradient(at 100% 0%, rgba(219, 39, 119, 0.12) 0, transparent 50%),
-          radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.08) 0, transparent 50%);
+          radial-gradient(at 0% 0%, rgba(183, 189, 247, 0.15) 0, transparent 50%),
+          radial-gradient(at 100% 0%, rgba(255, 116, 68, 0.1) 0, transparent 50%),
+          radial-gradient(at 50% 100%, rgba(87, 106, 143, 0.05) 0, transparent 50%);
         background-attachment: fixed;
       }
     </style>

@@ -13,11 +13,11 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-24 bg-gray-950/50 relative">
+    <section id="services" className="py-24 bg-[#B7BDF7]/5 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-purple-500 font-bold mb-4">Our Expertise</h2>
-          <h3 className="text-4xl lg:text-5xl font-bold">Our AI-Powered Solutions</h3>
+          <h2 className="text-sm uppercase tracking-[0.2em] text-[#FF7444] font-bold mb-4">Our Expertise</h2>
+          <h3 className="text-4xl lg:text-5xl font-extrabold text-[#576A8F]">Our AI-Powered Solutions</h3>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -25,19 +25,19 @@ const Services: React.FC = () => {
             <button 
               key={service.id} 
               onClick={(e) => scrollTo(e, '#booking')}
-              className="glass-card p-8 rounded-3xl hover:border-purple-500/50 transition-all duration-500 group block outline-none text-left w-full"
+              className="glass-card p-8 rounded-[32px] hover:border-[#FF7444]/40 hover:shadow-lg transition-all duration-500 group block outline-none text-left w-full"
             >
-              <div className="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-500 mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-[#576A8F]/10 rounded-2xl flex items-center justify-center text-[#576A8F] mb-6 group-hover:scale-110 transition-transform">
                 {iconMap[service.icon]}
               </div>
-              <h4 className="text-xl font-bold mb-4">{service.title}</h4>
-              <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+              <h4 className="text-xl font-bold mb-4 text-[#576A8F]">{service.title}</h4>
+              <p className="text-[#576A8F]/70 text-sm mb-6 leading-relaxed font-medium">
                 {service.description}
               </p>
               <ul className="space-y-3">
                 {service.benefits.map((benefit, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-sm text-gray-300">
-                    <CheckCircle2 className="w-4 h-4 text-purple-500 shrink-0" />
+                  <li key={idx} className="flex items-center gap-3 text-sm text-[#576A8F]/80 font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-[#FF7444] shrink-0" />
                     {benefit}
                   </li>
                 ))}
