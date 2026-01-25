@@ -39,9 +39,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Vanta.js Background Dependencies -->
+    <!-- Vanta.js Background Dependencies (Fog requires Three.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
     <style>
       :root {
@@ -87,6 +87,27 @@
           radial-gradient(at 100% 0%, rgba(255, 116, 68, 0.1) 0, transparent 50%),
           radial-gradient(at 50% 100%, rgba(87, 106, 143, 0.05) 0, transparent 50%);
         background-attachment: fixed;
+      }
+      /* Typewriter Cursor */
+      .typewriter-cursor::after {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 0.8em;
+        background-color: #FF7444;
+        margin-left: 6px;
+        vertical-align: middle;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        from, to { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @media (max-width: 640px) {
+        .typewriter-cursor::after {
+          width: 2px;
+          margin-left: 4px;
+        }
       }
     </style>
     <script type="importmap">
