@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               if (span) span.classList.remove('hidden');
             }}
           />
-          <span className="logo-text hidden text-xl font-extrabold tracking-tighter text-[#00003D]">
+          <span className="logo-text hidden text-2xl font-extrabold tracking-tighter text-[#00003D]">
             Yafu <span className="text-gradient">AI</span>
           </span>
         </button>
@@ -76,14 +76,14 @@ const Navbar: React.FC = () => {
             <button 
               key={link.name} 
               onClick={(e) => scrollTo(e, link.href)} 
-              className="text-xs font-semibold text-[#00003D]/80 hover:text-[#0033FF] transition-colors outline-none"
+              className="text-base font-semibold text-[#00003D]/80 hover:text-[#0033FF] transition-colors outline-none"
             >
               {link.name}
             </button>
           ))}
           <button 
             onClick={(e) => scrollTo(e, '#booking')} 
-            className="btn-gradient px-5 py-2 rounded-full text-xs font-bold outline-none shadow-md"
+            className="btn-gradient px-5 py-2 rounded-full text-base font-bold outline-none shadow-md"
           >
             Book a Call
           </button>

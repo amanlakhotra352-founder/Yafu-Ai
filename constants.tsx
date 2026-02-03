@@ -25,29 +25,29 @@ export const SERVICES: Service[] = [
   {
     id: 'voice-agents',
     title: 'AI Voice Agents',
-    description: 'Never miss a lead with intelligent voice agents that answer calls, qualify prospects, and book appointments 24/7.',
-    benefits: ['Increase response rates', 'Reduce missed opportunities', 'Scale customer service'],
+    description: 'A "digital employee" that handles inbound calls, qualifies prospects, and books meetings directly into your calendar 24/7.',
+    benefits: ['100% Lead Capture', 'Instant Qualification', 'Zero Training Required'],
     icon: 'PhoneCall'
   },
   {
     id: 'chatbots',
-    title: 'AI Chatbots',
-    description: 'Engage website visitors instantly with smart chatbots that answer questions, capture leads, and guide customers.',
-    benefits: ['Instant customer support', 'Higher engagement', 'Automated lead qualification'],
+    title: 'AI Sales Chatbots',
+    description: 'Advanced conversational AI that lives on your site to answer complex FAQs and convert browsing traffic into scheduled appointments.',
+    benefits: ['90% FAQ Automation', 'Lead Magnet Integration', 'CRM Syncing'],
     icon: 'MessageSquare'
   },
   {
     id: 'websites',
-    title: 'Custom Websites',
-    description: 'High-converting, professionally designed websites built to showcase your brand and turn visitors into customers.',
-    benefits: ['Mobile-responsive', 'SEO-optimized', 'Conversion-focused design'],
+    title: 'AI-Optimized Websites',
+    description: 'Not just a pretty site—a high-performance sales engine built with SEO and lead-generation architecture at its core.',
+    benefits: ['Conversion-First UX', 'Lightning Fast Loads', 'Dynamic AI Content'],
     icon: 'Layout'
   },
   {
     id: 'landing-pages',
-    title: 'Landing Pages',
-    description: 'Laser-focused landing pages designed to maximize conversions for your campaigns, products, or services.',
-    benefits: ['Higher ROI on ads', 'Clear messaging', 'Optimized for conversions'],
+    title: 'Growth Funnels',
+    description: 'Laser-focused landing pages designed for high-ticket service providers looking to maximize ROI on ad spend.',
+    benefits: ['A/B Tested Layouts', 'Clear Value Prop', 'Mobile-First Design'],
     icon: 'Zap'
   }
 ];
@@ -55,38 +55,38 @@ export const SERVICES: Service[] = [
 export const BENEFITS: Benefit[] = [
   {
     id: '247',
-    title: '24/7 Availability',
-    description: 'Your AI agents never sleep, ensuring no lead is left waiting regardless of the time.',
+    title: '24/7 Lead Capture',
+    description: 'While you sleep, your AI agents are qualifying leads and booking your morning appointments.',
     icon: 'Clock'
   },
   {
     id: 'qualified',
-    title: 'More Qualified Leads',
-    description: 'Automated capture and qualification filters out noise and delivers high-intent prospects.',
+    title: 'High-Intent Prospects',
+    description: 'Stop wasting time on "tyre kickers". Our AI filters for intent so you only talk to ready-to-buy clients.',
     icon: 'Users'
   },
   {
     id: 'reduced-costs',
-    title: 'Reduced Costs',
-    description: 'Slash your customer service and staffing overhead while maintaining elite responsiveness.',
+    title: '80% Less Overhead',
+    description: 'Replace expensive receptionist services and entry-level sales roles with reliable, scalable AI.',
     icon: 'BarChart3'
   },
   {
     id: 'fast-response',
-    title: 'Faster Response Times',
-    description: 'Instant engagement with every prospect leads to higher trust and conversion rates.',
+    title: 'Instant Speed-to-Lead',
+    description: 'Engage leads in under 30 seconds. Statistics show this increases conversion rates by over 300%.',
     icon: 'Zap'
   },
   {
     id: 'scalable',
-    title: 'Scalable Growth',
-    description: 'Handle 10x the volume without increasing your headcount. AI scales with your ambition.',
+    title: 'Unlimited Scalability',
+    description: 'Handle 1 or 1,000 calls simultaneously without ever needing to hire another person.',
     icon: 'Rocket'
   },
   {
     id: 'data-driven',
-    title: 'Data-Driven Insights',
-    description: 'Deep analytics on customer interactions help you refine your offer and strategy.',
+    title: 'Sales Intelligence',
+    description: 'Get full transcripts and sentiment analysis on every interaction to know exactly what your customers want.',
     icon: 'TrendingUp'
   }
 ];
@@ -94,26 +94,26 @@ export const BENEFITS: Benefit[] = [
 export const INDUSTRIES: Industry[] = [
   {
     id: 'real-estate',
-    title: 'Real Estate',
-    description: 'Automate showing requests, lead qualification, and property inquiries around the clock.',
+    title: 'Real Estate & Renting',
+    description: 'AI handles showing requests and qualifies buyer/seller leads instantly, even on weekends.',
     icon: 'Building2'
   },
   {
     id: 'healthcare',
-    title: 'Healthcare',
-    description: 'Seamless appointment scheduling, patient FAQs, and 24/7 front-desk support.',
+    title: 'Medical & Dental',
+    description: 'Automate appointment scheduling and patient inquiries to free up your front-desk staff.',
     icon: 'Stethoscope'
   },
   {
     id: 'ecommerce',
-    title: 'E-commerce',
-    description: 'Product recommendations, order tracking, and instant support for high-volume stores.',
+    title: 'High-Ticket E-com',
+    description: 'Expert AI support that guides customers through complex purchasing decisions 24/7.',
     icon: 'ShoppingBag'
   },
   {
     id: 'services',
-    title: 'Professional Services',
-    description: 'Lead capture, consultation booking, and personalized client communication workflows.',
+    title: 'Home & Pro Services',
+    description: 'For contractors, lawyers, and consultants who need to book consultations without picking up the phone.',
     icon: 'Briefcase'
   }
 ];
@@ -122,25 +122,25 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     name: 'Sarah Martinez',
-    role: 'CEO',
-    company: 'Martinez Real Estate',
-    content: "Since implementing Yafu AI's voice agent, we've increased our lead response rate by 85% and never miss a potential client call, even at 3 AM.",
+    role: 'Managing Director',
+    company: 'Martinez Estates',
+    content: "We used to miss 40% of our weekend calls. With Yafu AI's Voice Agent, every single inquiry is now qualified and booked into our calendar automatically.",
     avatar: 'https://picsum.photos/seed/sarah/100/100'
   },
   {
     id: '2',
     name: 'Dr. James Chen',
-    role: 'Clinic Director',
-    company: 'Wellness Heights',
-    content: "Our scheduling overhead dropped by 60% after setting up the AI assistant. Patients love the instant answers and easy booking experience.",
+    role: 'Founder',
+    company: 'Smile Design Clinic',
+    content: "The AI chatbot handles 90% of our patient FAQs. My staff is happier, and our monthly bookings have increased by 22% since launch.",
     avatar: 'https://picsum.photos/seed/james/100/100'
   },
   {
     id: '3',
     name: 'Elena Rossi',
-    role: 'Founder',
-    company: 'Luxe Wear',
-    content: "The custom landing pages and chatbot have doubled our conversion rate on Facebook ads. Yafu AI truly understands high-performance marketing.",
+    role: 'Growth Lead',
+    company: 'Luxe Home Services',
+    content: "The custom landing pages Yafu built doubled our lead flow from Google Ads. They truly understand the science of high-conversion design.",
     avatar: 'https://picsum.photos/seed/elena/100/100'
   }
 ];
@@ -148,33 +148,28 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS: FAQItem[] = [
   {
     id: 'q1',
-    question: 'How quickly can we get started?',
-    answer: 'Most solutions can be fully implemented and integrated within 7 to 14 days after our initial strategy call.'
+    question: 'Will the AI sound natural to my customers?',
+    answer: 'Yes. We use state-of-the-art human-grade voice models with natural inflection, pauses, and sentiment detection to ensure a professional experience.'
   },
   {
     id: 'q2',
-    question: 'Do I need technical knowledge to use your AI solutions?',
-    answer: 'Not at all. We handle all the heavy lifting, from development to integration. We provide a simple dashboard for you to see results.'
+    question: 'How much does it cost compared to a human employee?',
+    answer: 'A single AI agent typically costs about 1/10th of a full-time receptionist salary while working 3x as many hours with zero downtime.'
   },
   {
     id: 'q3',
-    question: 'Can the AI integrate with my existing systems?',
-    answer: 'Yes, we specialize in connecting AI agents with popular CRMs, calendars, and communication tools like HubSpot, Zapier, and Google Workspace.'
+    question: 'Can it really book appointments in my calendar?',
+    answer: 'Absolutely. We integrate directly with Google Calendar, Calendly, and most CRM-based scheduling tools like HubSpot or GoHighLevel.'
   },
   {
     id: 'q4',
-    question: 'What kind of results can I expect?',
-    answer: 'Our clients typically see a 50% reduction in missed leads and a 30-40% increase in lead conversion rates within the first 60 days.'
+    question: 'Is it hard to set up?',
+    answer: 'We handle everything. From technical architecture to script writing and integration, your system is delivered "turn-key" in under 14 days.'
   },
   {
     id: 'q5',
-    question: 'How is this different from hiring more staff?',
-    answer: 'AI works 24/7 without fatigue, holiday pay, or training periods. It costs a fraction of a full-time employee while being infinitely more scalable.'
-  },
-  {
-    id: 'q6',
-    question: 'What happens during the discovery call?',
-    answer: 'We analyze your current lead flow, identify bottlenecks, and map out a custom AI strategy that will deliver the highest ROI for your business.'
+    question: 'Is my data and my customers data secure?',
+    answer: 'Security is our priority. We use enterprise-grade encryption and comply with all major data protection standards to keep your business safe.'
   }
 ];
 
