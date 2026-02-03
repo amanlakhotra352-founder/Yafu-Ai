@@ -43,51 +43,51 @@ const Booking: React.FC = () => {
 
   return (
     <section id="booking" className="py-16 sm:py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FF7444]/5 to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0033FF]/5 to-transparent pointer-events-none"></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="glass-card rounded-[32px] sm:rounded-[48px] p-6 sm:p-8 lg:p-16 relative border-[#576A8F]/10 shadow-2xl">
+        <div className="glass-card rounded-[32px] sm:rounded-[48px] p-6 sm:p-8 lg:p-16 relative border-[#0033FF]/10 shadow-2xl">
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 items-center text-left">
             <div>
               <div className="mb-6 sm:mb-8">
-                <span className="text-3xl lg:text-4xl font-extrabold tracking-tighter text-[#576A8F]">
+                <span className="text-3xl lg:text-4xl font-extrabold tracking-tighter text-[#00003D]">
                   Yafu <span className="text-gradient">AI</span>
                 </span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 tracking-tight leading-tight text-[#576A8F]">
+              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 tracking-tight leading-tight text-[#00003D]">
                 Ready to Transform Your <br />
                 <span className="text-gradient">Business with AI?</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-[#576A8F]/70 mb-6 sm:mb-8 leading-relaxed font-medium">
+              <p className="text-base sm:text-lg text-[#00003D]/70 mb-6 sm:mb-8 leading-relaxed font-medium">
                 Fill out the form to get a custom strategy. We'll show you exactly how Yafu AI can automate your growth.
               </p>
 
               <div className="space-y-3 sm:space-y-4 mb-8">
-                <div className="flex items-center gap-3 text-sm text-[#576A8F] font-bold">
-                  <ShieldCheck className="w-5 h-5 text-[#FF7444] shrink-0" />
+                <div className="flex items-center gap-3 text-sm text-[#00003D] font-bold">
+                  <ShieldCheck className="w-5 h-5 text-[#0033FF] shrink-0" />
                   No commitment required
                 </div>
-                <div className="flex items-center gap-3 text-sm text-[#576A8F] font-bold">
-                  <Clock className="w-5 h-5 text-[#B7BDF7] shrink-0" />
+                <div className="flex items-center gap-3 text-sm text-[#00003D] font-bold">
+                  <Clock className="w-5 h-5 text-[#977DFF] shrink-0" />
                   Fast response within 24 hours
                 </div>
-                <div className="flex items-center gap-3 text-sm text-[#576A8F] font-bold">
-                  <Target className="w-5 h-5 text-[#576A8F] shrink-0" />
+                <div className="flex items-center gap-3 text-sm text-[#00003D] font-bold">
+                  <Target className="w-5 h-5 text-[#0600AB] shrink-0" />
                   Custom AI blueprint included
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border border-[#576A8F]/10 shadow-lg">
+            <div className="bg-white p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border border-[#00003D]/10 shadow-lg">
               {status === 'success' ? (
                 <div className="h-full flex flex-col items-center justify-center text-center py-10 sm:py-12 animate-in fade-in zoom-in duration-500">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#FF7444]/10 rounded-full flex items-center justify-center mb-6">
-                    <Send className="text-[#FF7444] w-8 h-8 sm:w-10 sm:h-10" />
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#0033FF]/10 rounded-full flex items-center justify-center mb-6">
+                    <Send className="text-[#0033FF] w-8 h-8 sm:w-10 sm:h-10" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2 text-[#576A8F]">Thanks, {submittedName}!</h3>
-                  <p className="text-[#576A8F]/70 font-medium text-base">
+                  <h3 className="text-2xl font-bold mb-2 text-[#00003D]">Thanks, {submittedName}!</h3>
+                  <p className="text-[#00003D]/70 font-medium text-base">
                     We have received your request and will provide you with a solution shortly.
                   </p>
                 </div>
@@ -99,7 +99,7 @@ const Booking: React.FC = () => {
                   <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
                   
                   <div>
-                    <label htmlFor="full-name" className="block text-xs sm:text-sm font-bold text-[#576A8F] mb-1.5 sm:mb-2 uppercase tracking-wider">Full Name</label>
+                    <label htmlFor="full-name" className="block text-xs sm:text-sm font-bold text-[#00003D] mb-1.5 sm:mb-2 uppercase tracking-wider">Full Name</label>
                     <input 
                       id="full-name"
                       name="name"
@@ -107,12 +107,12 @@ const Booking: React.FC = () => {
                       required 
                       autoComplete="name"
                       placeholder="John Doe"
-                      className="w-full bg-[#FFF8DE]/30 border border-[#576A8F]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#FF7444] transition-all text-[#576A8F] placeholder:text-[#576A8F]/30 text-base"
+                      className="w-full bg-[#F2E6EE]/30 border border-[#00003D]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#0033FF] transition-all text-[#00003D] placeholder:text-[#00003D]/30 text-base"
                     />
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="email" className="block text-xs sm:text-sm font-bold text-[#576A8F] mb-1.5 sm:mb-2 uppercase tracking-wider">Work Email</label>
+                      <label htmlFor="email" className="block text-xs sm:text-sm font-bold text-[#00003D] mb-1.5 sm:mb-2 uppercase tracking-wider">Work Email</label>
                       <input 
                         id="email"
                         name="email"
@@ -121,11 +121,11 @@ const Booking: React.FC = () => {
                         autoComplete="email"
                         inputMode="email"
                         placeholder="john@company.com"
-                        className="w-full bg-[#FFF8DE]/30 border border-[#576A8F]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#FF7444] transition-all text-[#576A8F] placeholder:text-[#576A8F]/30 text-base"
+                        className="w-full bg-[#F2E6EE]/30 border border-[#00003D]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#0033FF] transition-all text-[#00003D] placeholder:text-[#00003D]/30 text-base"
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-xs sm:text-sm font-bold text-[#576A8F] mb-1.5 sm:mb-2 uppercase tracking-wider">Phone Number</label>
+                      <label htmlFor="phone" className="block text-xs sm:text-sm font-bold text-[#00003D] mb-1.5 sm:mb-2 uppercase tracking-wider">Phone Number</label>
                       <input 
                         id="phone"
                         name="phone"
@@ -134,19 +134,19 @@ const Booking: React.FC = () => {
                         autoComplete="tel"
                         inputMode="numeric"
                         placeholder="1234567890"
-                        className="w-full bg-[#FFF8DE]/30 border border-[#576A8F]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#FF7444] transition-all text-[#576A8F] placeholder:text-[#576A8F]/30 text-base"
+                        className="w-full bg-[#F2E6EE]/30 border border-[#00003D]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#0033FF] transition-all text-[#00003D] placeholder:text-[#00003D]/30 text-base"
                       />
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-xs sm:text-sm font-bold text-[#576A8F] mb-1.5 sm:mb-2 uppercase tracking-wider">How can we help?</label>
+                    <label htmlFor="message" className="block text-xs sm:text-sm font-bold text-[#00003D] mb-1.5 sm:mb-2 uppercase tracking-wider">How can we help?</label>
                     <textarea 
                       id="message"
                       name="message"
                       required 
                       rows={3}
                       placeholder="Tell us about your goals..."
-                      className="w-full bg-[#FFF8DE]/30 border border-[#576A8F]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#FF7444] transition-all text-[#576A8F] resize-none placeholder:text-[#576A8F]/30 text-base"
+                      className="w-full bg-[#F2E6EE]/30 border border-[#00003D]/10 rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#0033FF] transition-all text-[#00003D] resize-none placeholder:text-[#00003D]/30 text-base"
                     ></textarea>
                   </div>
                   <button 
@@ -164,7 +164,7 @@ const Booking: React.FC = () => {
                     )}
                   </button>
                   {status === 'error' && (
-                    <p className="text-[#FF7444] text-sm text-center font-bold animate-pulse">Something went wrong. Please try again.</p>
+                    <p className="text-[#0033FF] text-sm text-center font-bold animate-pulse">Something went wrong. Please try again.</p>
                   )}
                 </form>
               )}

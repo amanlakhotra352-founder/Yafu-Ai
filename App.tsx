@@ -14,7 +14,7 @@ import ContactButtons from './components/ContactButtons';
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen selection:bg-[#FF7444] selection:text-white">
+    <div className="relative min-h-screen selection:bg-[#0033FF] selection:text-white">
       {/* Wrapper to ensure global z-index management */}
       <Navbar />
       
