@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm text-[#F2E6EE]/70 font-medium">
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#0033FF]" />
-                <a href="mailto:hello@yafu.online" className="hover:text-white transition-colors">hello@yafu.online</a>
+                <a href="mailto:hello@yafuai.online" className="hover:text-white transition-colors">hello@yafuai.online</a>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle className="w-4 h-4 text-[#977DFF]" />
