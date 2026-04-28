@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { ArrowRight, ShieldCheck, Clock, Target, Send, Loader2, BarChart3 } from 'lucide-react';
+import { trackEvent } from '../lib/analytics';
 
 const Booking: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -26,6 +27,7 @@ const Booking: React.FC = () => {
       });
 
       if (response.ok) {
+        trackEvent('Conversion', 'Submit Audit Request', 'Booking Form');
         setStatus('success');
         form.reset();
         setTimeout(() => setStatus('idle'), 10000);

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, Star, Sparkles, Calendar } from 'lucide-react';
+import { trackEvent } from '../lib/analytics';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
@@ -42,6 +43,11 @@ const Hero: React.FC = () => {
     }
   };
 
+  const handleAuditClick = (e: React.MouseEvent) => {
+    trackEvent('Engagement', 'Click Audit Button', 'Hero CTA');
+    scrollTo(e, '#booking');
+  };
+
   return (
     <section id="top" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20">
       <div 
@@ -68,7 +74,7 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-6 sm:px-0 mb-16">
           <button 
-            onClick={(e) => scrollTo(e, '#booking')} 
+            onClick={handleAuditClick} 
             className="btn-gradient w-full sm:w-auto px-[42px] py-5 rounded-full text-lg font-bold flex items-center justify-center gap-2 group shadow-xl"
           >
             Get Your Free AI Audit
